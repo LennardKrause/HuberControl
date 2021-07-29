@@ -1,6 +1,11 @@
 import sys, time, os, traceback
 from PyQt5.QtCore import QProcess
 
+'''
+Taken from:
+https://stackoverflow.com/questions/49386039/how-to-invoke-method-on-gui-thread-but-without-have-that-method-in-qmainwindow-c
+'''
+
 class CrashEngine:
     @staticmethod
     def register(name, version):
