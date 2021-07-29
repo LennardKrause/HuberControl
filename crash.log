@@ -1,0 +1,116 @@
+Thu Jul 29 11:12:42 2021
+Software name: HuberControl
+Software version: v2021-02-08
+
+Traceback (most recent call last):
+  File "o:\Nat_Uorg\Instruments\Huber\HuberControl\HuberControl.py", line 1189, in usr_ch_user
+    os.makedirs(self.userpath)
+  File "C:\WinPython392\WPy64-3920\python-3.9.2.amd64\lib\os.py", line 215, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "C:\WinPython392\WPy64-3920\python-3.9.2.amd64\lib\os.py", line 215, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "C:\WinPython392\WPy64-3920\python-3.9.2.amd64\lib\os.py", line 215, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "C:\WinPython392\WPy64-3920\python-3.9.2.amd64\lib\os.py", line 225, in makedirs
+    mkdir(name, mode)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'd:/'
+
+Thu Jul 29 11:15:52 2021
+Software name: HuberControl
+Software version: v2021-02-08
+
+Traceback (most recent call last):
+  File "o:\Nat_Uorg\Instruments\Huber\HuberControl\HuberControl.py", line 1189, in usr_ch_user
+    os.makedirs(self.userpath)
+  File "C:\WinPython392\WPy64-3920\python-3.9.2.amd64\lib\os.py", line 215, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "C:\WinPython392\WPy64-3920\python-3.9.2.amd64\lib\os.py", line 215, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "C:\WinPython392\WPy64-3920\python-3.9.2.amd64\lib\os.py", line 215, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "C:\WinPython392\WPy64-3920\python-3.9.2.amd64\lib\os.py", line 225, in makedirs
+    mkdir(name, mode)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'd:/'
+
+Thu Jul 29 11:40:40 2021
+Software name: HuberControl
+Software version: v2021-02-08
+
+Traceback (most recent call last):
+  File "o:\Nat_Uorg\Instruments\Huber\HuberControl\_lib\_CameraDevice.py", line 71, in readFrame
+    raise ValueError('Failed to read frame')
+ValueError: Failed to read frame
+
+Thu Jul 29 11:51:58 2021
+Software name: HuberControl
+Software version: v2021-02-08
+
+Traceback (most recent call last):
+  File "c:\GitHub\HuberControl\HuberControl.py", line 579, in <lambda>
+    self.btn_frm_fwd.clicked.connect(lambda: self.fv_toolbar_browse(1))
+  File "c:\GitHub\HuberControl\HuberControl.py", line 1495, in fv_toolbar_browse
+    if self.display_img not in self.raw_files:
+AttributeError: 'mainWindow' object has no attribute 'display_img'
+
+Thu Jul 29 11:54:39 2021
+Software name: HuberControl
+Software version: v2021-02-08
+
+Traceback (most recent call last):
+  File "c:\GitHub\HuberControl\HuberControl.py", line 1516, in fv_toggle_poi
+    self.FrameView.draw_poi(self.display_bc, self.display_dxt, self.display_tth,
+  File "c:\GitHub\HuberControl\_lib\_FrameView.py", line 136, in draw_poi
+    self.log.error('det_bc: {}\ndet_dist: {}\ndet_tth: {}',format(det_bc, det_dist, det_tth))
+TypeError: format expected at most 2 arguments, got 3
+
+Thu Jul 29 12:03:04 2021
+Software name: HuberControl
+Software version: v2021-02-08
+
+Traceback (most recent call last):
+  File "c:\GitHub\HuberControl\_lib\_CameraDevice.py", line 72, in readFrame
+    self.frameReady.emit(None)
+TypeError: cameraDevice.frameReady[QImage].emit(): argument 1 has unexpected type 'NoneType'
+
+Thu Jul 29 12:04:41 2021
+Software name: HuberControl
+Software version: v2021-02-08
+
+Traceback (most recent call last):
+  File "c:\GitHub\HuberControl\_lib\_CameraDevice.py", line 72, in readFrame
+    self.frameReady.emit(self._convert_array_to_qimage(np.zeros((self.im_width, self.im_height))))
+NameError: name 'np' is not defined
+
+Thu Jul 29 12:05:24 2021
+Software name: HuberControl
+Software version: v2021-02-08
+
+Traceback (most recent call last):
+  File "c:\GitHub\HuberControl\_lib\_CameraDevice.py", line 73, in readFrame
+    self.frameReady.emit(self._convert_array_to_qimage(np.zeros((self.im_width, self.im_height))))
+  File "c:\GitHub\HuberControl\_lib\_CameraDevice.py", line 80, in _convert_array_to_qimage
+    height, width, channels = a.shape
+ValueError: not enough values to unpack (expected 3, got 2)
+
+Thu Jul 29 12:07:25 2021
+Software name: HuberControl
+Software version: v2021-02-08
+
+Traceback (most recent call last):
+  File "c:\GitHub\HuberControl\HuberControl.py", line 3224, in cam_connect
+    self.camera = cameraDevice()
+  File "c:\GitHub\HuberControl\_lib\_CameraDevice.py", line 18, in __init__
+    self.capture.set(cv2.CAP_PROP_FRAME_WIDTH, self.im_width)
+AttributeError: 'cameraDevice' object has no attribute 'im_width'
+
+Thu Jul 29 12:11:53 2021
+Software name: HuberControl
+Software version: v2021-02-08
+
+Traceback (most recent call last):
+  File "c:\GitHub\HuberControl\HuberControl.py", line 1328, in gen_exit_app
+    self.cam_disconnect()
+  File "c:\GitHub\HuberControl\HuberControl.py", line 3240, in cam_disconnect
+    self.cam_thread.stop()
+AttributeError: 'QThread' object has no attribute 'stop'
+

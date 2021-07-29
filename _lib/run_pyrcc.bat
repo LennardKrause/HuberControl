@@ -1,0 +1,1 @@
+c:\WinPython353\python-3.5.3.amd64\Scripts\pyrcc5.bat --from-imports icons.qrc -o icons_rc.py
