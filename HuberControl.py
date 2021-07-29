@@ -1326,6 +1326,7 @@ class mainWindow(QtWidgets.QMainWindow, uic.loadUiType(os.path.join(os.path.dirn
             self.p2_disconnect()
         if self.cameraIsConnected:
             self.cam_disconnect()
+        quit()
     
     def keyPressEvent(self, e):
         self.log.debug('{} {}'.format(e.key(), QtGui.QKeySequence(e.key()).toString()))
